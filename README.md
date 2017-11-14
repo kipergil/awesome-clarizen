@@ -1,5 +1,5 @@
 # awesome-clarizen
-Clarizen related documents all in one place
+Clarizen related documents, trainings and web pages. Nothing new, just all in one place
 
 ### Basic Training 
 - https://www.clarizen.com/education/clarizen-orientation-getting-started/
