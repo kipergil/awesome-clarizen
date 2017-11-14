@@ -43,3 +43,7 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 
 ### Clarizen Data Loader : 
 - http://usermanual.clarizen.com/data-loader
+
+### Clarizen Misc : 
+- Clarizen user manuel CSS style to fix table and heading views. https://userstyles.org/styles/151256/clarizen-user-manuel-fix
+
