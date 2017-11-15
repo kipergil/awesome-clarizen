@@ -1,1389 +1,1665 @@
-{
-  "entityDescriptions": [
-    {
-      "typeName": "Note",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Note",
-      "labelPlural": "Notes",
-      "parentEntity": "Comment",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Post",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "V5 Post",
-      "labelPlural": "V5 Posts",
-      "parentEntity": "Comment",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Email",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Email",
-      "labelPlural": "Emails",
-      "parentEntity": "Comment",
-      "displayField": "Subject",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Comment",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Collaboration Items",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Template",
-      "fields": null,
-      "validStates": [
-        "Being Modified",
-        "Published"
-      ],
-      "label": "Template",
-      "labelPlural": "Templates",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NonLaborResource",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Non-Labor Resource",
-      "labelPlural": "Non-Labor Resources",
-      "parentEntity": "GenericResourceEntity",
-      "displayField": "Name",
-      "disabled": true,
-      "relations": null
-    },
-    {
-      "typeName": "User",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Deleted",
-        "Disabled",
-        "Pending"
-      ],
-      "label": "User",
-      "labelPlural": "People",
-      "parentEntity": "ResourceEntity",
-      "displayField": "DisplayName",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Profile",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "Profile",
-      "labelPlural": "Profile",
-      "parentEntity": "ResourceEntity",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DiscussionGroup",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "Discussion Group",
-      "labelPlural": "Discussion Groups",
-      "parentEntity": "Group",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "UserGroup",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "User Group",
-      "labelPlural": "User Groups",
-      "parentEntity": "Group",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Group",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "Group",
-      "labelPlural": "Groups",
-      "parentEntity": "ResourceGroupEntity",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Skill",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "Skill",
-      "labelPlural": "Skills",
-      "parentEntity": "ResourceGroupEntity",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "JobTitle",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "Job Title",
-      "labelPlural": "Job Titles",
-      "parentEntity": "ResourceGroupEntity",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceGroupEntity",
-      "fields": null,
-      "validStates": [
-        "Active",
-        "Inactive"
-      ],
-      "label": "Group",
-      "labelPlural": "Groups",
-      "parentEntity": "ResourceEntity",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceEntity",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Groups And Users",
-      "labelPlural": "Groups Or Users",
-      "parentEntity": "GenericResourceEntity",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GenericResourceEntity",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Users And Resources",
-      "labelPlural": "Generic Resource Entity",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "FileTemplate",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "File Template",
-      "labelPlural": "File Templates",
-      "parentEntity": "BaseFile",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Document",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "File",
-      "labelPlural": "Files",
-      "parentEntity": "BaseFile",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "BaseFile",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Files",
-      "labelPlural": "base Files",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "LaborResourceLinkAggregated",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Labor Resource link aggregated",
-      "labelPlural": "",
-      "parentEntity": "LaborResourceLink",
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "LaborResourceLinkDirect",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Labor Resource link direct",
-      "labelPlural": "",
-      "parentEntity": "LaborResourceLink",
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "LaborResourceLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Labor resource link",
-      "labelPlural": "Labor resource links",
-      "parentEntity": "ResourceLinkFinancial",
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NonLaborResourceLinkAggregated",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Non-Labor Resource link aggregated",
-      "labelPlural": "",
-      "parentEntity": "NonLaborResourceLink",
-      "displayField": null,
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NonLaborResourceLinkDirect",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Non-Labor Resource link direct",
-      "labelPlural": "",
-      "parentEntity": "NonLaborResourceLink",
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NonLaborResourceLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Non-Labor Resource link",
-      "labelPlural": "Non-Labor Resource links",
-      "parentEntity": "ResourceLinkFinancial",
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceLinkFinancial",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Financial Resource Link",
-      "labelPlural": "Resource links",
-      "parentEntity": null,
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "LaborResourceTimePhase",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Labor time phase data",
-      "labelPlural": "",
-      "parentEntity": "ResourceTimePhase",
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NonLaborResourceTimePhase",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Non-Labor time phase data",
-      "labelPlural": "",
-      "parentEntity": "ResourceTimePhase",
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceTimePhase",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Financial Resource time phase",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "LaborResourceSnapshot",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Labor resource snapshot",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "AdditionalObjectProperties",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Additional Object Properties",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Overview",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "PushNotification",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Push Notification",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Data",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Data",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "WorkByDay",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Task Assignment",
-      "labelPlural": "",
-      "parentEntity": "ResourceCalendarException",
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceCalendarExceptionAbsolute",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Project Assignment",
-      "labelPlural": "",
-      "parentEntity": "ResourceCalendarException",
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceCalendarExceptionRelative",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Resource Calendar Exception Relative",
-      "labelPlural": "",
-      "parentEntity": "ResourceCalendarException",
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ResourceCalendarException",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Resource Calendar Exception",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "ExternalID",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ReportShortcutLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Report Shortcut",
-      "labelPlural": "",
-      "parentEntity": "ReportsFolderContentLink",
-      "displayField": "Parent",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ReportsHierarchyLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Reports Hierarchy",
-      "labelPlural": "",
-      "parentEntity": "ReportsFolderContentLink",
-      "displayField": "Parent",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ReportsFolderContentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Reports Folder Content",
-      "labelPlural": "",
-      "parentEntity": "FolderContentLink",
-      "displayField": "Parent",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "FolderContentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Folder Content",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Parent",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Dashboard",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Dashboard",
-      "labelPlural": "Dashboards",
-      "parentEntity": "ReportAndDashboard",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Report",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Report",
-      "labelPlural": "Reports",
-      "parentEntity": "ReportAndDashboard",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ReportAndDashboard",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Reports And Dashboards",
-      "labelPlural": "Reports",
-      "parentEntity": "FoldersAndReports",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "FolderForReport",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Reports Folder",
-      "labelPlural": "Folders",
-      "parentEntity": "FoldersAndReports",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "FoldersAndReports",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Folder and Report",
-      "labelPlural": "Folders and Reports",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Permission",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Permission Definitions",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DependencyLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Dependency",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "IntegrationsRegistry",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Integrations Registry",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicDocumentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic Document Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicGroupLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic Group Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicExpenseEntryLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic ExpenseEntry Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicExpenseSheetLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic ExpenseSheet Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicCustomerLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic Customer Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicCaseLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic Case Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicWorkItemLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic WorkItem Link",
-      "labelPlural": "",
-      "parentEntity": "TopicLink",
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "TopicLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic Link",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Topic",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Milestone",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Milestone",
-      "labelPlural": "Milestones",
-      "parentEntity": "PlanningComponent",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Task",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Task",
-      "labelPlural": "Tasks",
-      "parentEntity": "GenericTask",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "RecurringTask",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Recurring Task",
-      "labelPlural": "Recurring Tasks",
-      "parentEntity": "GenericTask",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GenericTask",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Task",
-      "labelPlural": "Tasks",
-      "parentEntity": "PlanningComponent",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "PlanningComponent",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Planning Component",
-      "labelPlural": "",
-      "parentEntity": "WorkItem",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Project",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Project",
-      "labelPlural": "Projects",
-      "parentEntity": "GenericProject",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Program",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Program",
-      "labelPlural": "Programs",
-      "parentEntity": "GenericProject",
-      "displayField": "Name",
-      "disabled": true,
-      "relations": null
-    },
-    {
-      "typeName": "GenericProject",
-      "fields": null,
-      "validStates": [
-        "Requested",
-        "Draft",
-        "Active",
-        "On Hold",
-        "Cancelled",
-        "Completed"
-      ],
-      "label": "Project or Program",
-      "labelPlural": "Projects or Programs",
-      "parentEntity": "WorkItem",
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "WorkItem",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Work Item",
-      "labelPlural": "Work Items",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Topic",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Topic",
-      "labelPlural": "Topics",
-      "parentEntity": null,
-      "displayField": "Name",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Following",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Following",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "User",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Like",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Like",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "User",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NLRDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Non-Labor Resource Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ReportDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Report Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "UserReportDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Report Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "SystemReportDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Saved Report Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ExpenseEntryDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "ExpenseEntry Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ExpenseSheetDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "ExpenseSheet Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "CustomerDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Customer Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "CaseDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Case Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "WorkItemDiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "WorkItem Discussion Link",
-      "labelPlural": "",
-      "parentEntity": "DiscussionLink",
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DiscussionLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Discussion Links",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "DiscussionMessage",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DiscussionReply",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Reply",
-      "labelPlural": "Replies",
-      "parentEntity": "DiscussionMessage",
-      "displayField": "Text",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DiscussionPost",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Post",
-      "labelPlural": "Posts",
-      "parentEntity": "DiscussionMessage",
-      "displayField": "Text",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DiscussionMessage",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Discussion Message",
-      "labelPlural": "Discussion Messages",
-      "parentEntity": null,
-      "displayField": "Text",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupTaskLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Task Link",
-      "labelPlural": "",
-      "parentEntity": "GroupLink",
-      "displayField": "Group",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupProjectLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Project Link",
-      "labelPlural": "",
-      "parentEntity": "GroupLink",
-      "displayField": "Group",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupCaseLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Case Link",
-      "labelPlural": "",
-      "parentEntity": "GroupLink",
-      "displayField": "Group",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupCustomerLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Customer Link",
-      "labelPlural": "",
-      "parentEntity": "GroupLink",
-      "displayField": "Group",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Link",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Group",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "RecycleBinItems",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Recycle Bin Items",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": null,
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "Stopwatch",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Stopwatch",
-      "labelPlural": "Stopwatches",
-      "parentEntity": null,
-      "displayField": "WorkItem",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ProfileLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Profile Link",
-      "labelPlural": "",
-      "parentEntity": "MembershipLink",
-      "displayField": "Container",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "SubGroupHierarchyLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Hierarchy",
-      "labelPlural": "",
-      "parentEntity": "GroupHierarchyLink",
-      "displayField": "Container",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupMembershipLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Group Member",
-      "labelPlural": "",
-      "parentEntity": "GroupHierarchyLink",
-      "displayField": "Container",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "GroupHierarchyLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "User Group Hierarchy",
-      "labelPlural": "",
-      "parentEntity": "MembershipLink",
-      "displayField": "Container",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "SkillLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Skill Link",
-      "labelPlural": "",
-      "parentEntity": "MembershipLink",
-      "displayField": "Container",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "MembershipLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Membership",
-      "labelPlural": "",
-      "parentEntity": null,
-      "displayField": "Container",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "NLRAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachment",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "WorkItemAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachment",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "DashboardAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachments",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ReportAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachments",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "UserAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachment",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "ExpenseSheetAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachment",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    },
-    {
-      "typeName": "CustomerAttachmentLink",
-      "fields": null,
-      "validStates": [
-        
-      ],
-      "label": "Attachment",
-      "labelPlural": "",
-      "parentEntity": "AttachmentLink",
-      "displayField": "Entity",
-      "disabled": false,
-      "relations": null
-    }
-  ]
-}
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">typeName</th>
+<th title="Field #2">fields</th>
+<th title="Field #3">label</th>
+<th title="Field #4">labelPlural</th>
+<th title="Field #5">parentEntity</th>
+<th title="Field #6">displayField</th>
+<th title="Field #7">disabled</th>
+<th title="Field #8">relations</th>
+<th title="Field #9">validStates/0</th>
+<th title="Field #10">validStates/1</th>
+<th title="Field #11">validStates/2</th>
+<th title="Field #12">validStates/3</th>
+<th title="Field #13">validStates/4</th>
+<th title="Field #14">validStates/5</th>
+</tr></thead>
+<tbody><tr>
+<td>Note</td>
+<td> </td>
+<td>Note</td>
+<td>Notes</td>
+<td>Comment</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Post</td>
+<td> </td>
+<td>V5 Post</td>
+<td>V5 Posts</td>
+<td>Comment</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Email</td>
+<td> </td>
+<td>Email</td>
+<td>Emails</td>
+<td>Comment</td>
+<td>Subject</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Comment</td>
+<td> </td>
+<td>Collaboration Items</td>
+<td> </td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Template</td>
+<td> </td>
+<td>Template</td>
+<td>Templates</td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Being Modified</td>
+<td>Published</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NonLaborResource</td>
+<td> </td>
+<td>Non-Labor Resource</td>
+<td>Non-Labor Resources</td>
+<td>GenericResourceEntity</td>
+<td>Name</td>
+<td>true</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>User</td>
+<td> </td>
+<td>User</td>
+<td>People</td>
+<td>ResourceEntity</td>
+<td>DisplayName</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Deleted</td>
+<td>Disabled</td>
+<td>Pending</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Profile</td>
+<td> </td>
+<td>Profile</td>
+<td>Profile</td>
+<td>ResourceEntity</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DiscussionGroup</td>
+<td> </td>
+<td>Discussion Group</td>
+<td>Discussion Groups</td>
+<td>Group</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>UserGroup</td>
+<td> </td>
+<td>User Group</td>
+<td>User Groups</td>
+<td>Group</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Group</td>
+<td> </td>
+<td>Group</td>
+<td>Groups</td>
+<td>ResourceGroupEntity</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Skill</td>
+<td> </td>
+<td>Skill</td>
+<td>Skills</td>
+<td>ResourceGroupEntity</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>JobTitle</td>
+<td> </td>
+<td>Job Title</td>
+<td>Job Titles</td>
+<td>ResourceGroupEntity</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceGroupEntity</td>
+<td> </td>
+<td>Group</td>
+<td>Groups</td>
+<td>ResourceEntity</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Active</td>
+<td>Inactive</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceEntity</td>
+<td> </td>
+<td>Groups And Users</td>
+<td>Groups Or Users</td>
+<td>GenericResourceEntity</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GenericResourceEntity</td>
+<td> </td>
+<td>Users And Resources</td>
+<td>Generic Resource Entity</td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>FileTemplate</td>
+<td> </td>
+<td>File Template</td>
+<td>File Templates</td>
+<td>BaseFile</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Document</td>
+<td> </td>
+<td>File</td>
+<td>Files</td>
+<td>BaseFile</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>BaseFile</td>
+<td> </td>
+<td>Files</td>
+<td>base Files</td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>LaborResourceLinkAggregated</td>
+<td> </td>
+<td>Labor Resource link aggregated</td>
+<td> </td>
+<td>LaborResourceLink</td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>LaborResourceLinkDirect</td>
+<td> </td>
+<td>Labor Resource link direct</td>
+<td> </td>
+<td>LaborResourceLink</td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>LaborResourceLink</td>
+<td> </td>
+<td>Labor resource link</td>
+<td>Labor resource links</td>
+<td>ResourceLinkFinancial</td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NonLaborResourceLinkAggregated</td>
+<td> </td>
+<td>Non-Labor Resource link aggregated</td>
+<td> </td>
+<td>NonLaborResourceLink</td>
+<td> </td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NonLaborResourceLinkDirect</td>
+<td> </td>
+<td>Non-Labor Resource link direct</td>
+<td> </td>
+<td>NonLaborResourceLink</td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NonLaborResourceLink</td>
+<td> </td>
+<td>Non-Labor Resource link</td>
+<td>Non-Labor Resource links</td>
+<td>ResourceLinkFinancial</td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceLinkFinancial</td>
+<td> </td>
+<td>Financial Resource Link</td>
+<td>Resource links</td>
+<td> </td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>LaborResourceTimePhase</td>
+<td> </td>
+<td>Labor time phase data</td>
+<td> </td>
+<td>ResourceTimePhase</td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NonLaborResourceTimePhase</td>
+<td> </td>
+<td>Non-Labor time phase data</td>
+<td> </td>
+<td>ResourceTimePhase</td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceTimePhase</td>
+<td> </td>
+<td>Financial Resource time phase</td>
+<td> </td>
+<td> </td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>LaborResourceSnapshot</td>
+<td> </td>
+<td>Labor resource snapshot</td>
+<td> </td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>AdditionalObjectProperties</td>
+<td> </td>
+<td>Additional Object Properties</td>
+<td> </td>
+<td> </td>
+<td>Overview</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>PushNotification</td>
+<td> </td>
+<td>Push Notification</td>
+<td> </td>
+<td> </td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Data</td>
+<td> </td>
+<td>Data</td>
+<td> </td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>WorkByDay</td>
+<td> </td>
+<td>Task Assignment</td>
+<td> </td>
+<td>ResourceCalendarException</td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceCalendarExceptionAbsolute</td>
+<td> </td>
+<td>Project Assignment</td>
+<td> </td>
+<td>ResourceCalendarException</td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceCalendarExceptionRelative</td>
+<td> </td>
+<td>Resource Calendar Exception Relative</td>
+<td> </td>
+<td>ResourceCalendarException</td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ResourceCalendarException</td>
+<td> </td>
+<td>Resource Calendar Exception</td>
+<td> </td>
+<td> </td>
+<td>ExternalID</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ReportShortcutLink</td>
+<td> </td>
+<td>Report Shortcut</td>
+<td> </td>
+<td>ReportsFolderContentLink</td>
+<td>Parent</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ReportsHierarchyLink</td>
+<td> </td>
+<td>Reports Hierarchy</td>
+<td> </td>
+<td>ReportsFolderContentLink</td>
+<td>Parent</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ReportsFolderContentLink</td>
+<td> </td>
+<td>Reports Folder Content</td>
+<td> </td>
+<td>FolderContentLink</td>
+<td>Parent</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>FolderContentLink</td>
+<td> </td>
+<td>Folder Content</td>
+<td> </td>
+<td> </td>
+<td>Parent</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Dashboard</td>
+<td> </td>
+<td>Dashboard</td>
+<td>Dashboards</td>
+<td>ReportAndDashboard</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Report</td>
+<td> </td>
+<td>Report</td>
+<td>Reports</td>
+<td>ReportAndDashboard</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ReportAndDashboard</td>
+<td> </td>
+<td>Reports And Dashboards</td>
+<td>Reports</td>
+<td>FoldersAndReports</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>FolderForReport</td>
+<td> </td>
+<td>Reports Folder</td>
+<td>Folders</td>
+<td>FoldersAndReports</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>FoldersAndReports</td>
+<td> </td>
+<td>Folder and Report</td>
+<td>Folders and Reports</td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Permission</td>
+<td> </td>
+<td>Permission Definitions</td>
+<td> </td>
+<td> </td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DependencyLink</td>
+<td> </td>
+<td>Dependency</td>
+<td> </td>
+<td> </td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IntegrationsRegistry</td>
+<td> </td>
+<td>Integrations Registry</td>
+<td> </td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicDocumentLink</td>
+<td> </td>
+<td>Topic Document Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicDiscussionLink</td>
+<td> </td>
+<td>Topic Discussion Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicGroupLink</td>
+<td> </td>
+<td>Topic Group Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicExpenseEntryLink</td>
+<td> </td>
+<td>Topic ExpenseEntry Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicExpenseSheetLink</td>
+<td> </td>
+<td>Topic ExpenseSheet Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicCustomerLink</td>
+<td> </td>
+<td>Topic Customer Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicCaseLink</td>
+<td> </td>
+<td>Topic Case Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicWorkItemLink</td>
+<td> </td>
+<td>Topic WorkItem Link</td>
+<td> </td>
+<td>TopicLink</td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>TopicLink</td>
+<td> </td>
+<td>Topic Link</td>
+<td> </td>
+<td> </td>
+<td>Topic</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Milestone</td>
+<td> </td>
+<td>Milestone</td>
+<td>Milestones</td>
+<td>PlanningComponent</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Task</td>
+<td> </td>
+<td>Task</td>
+<td>Tasks</td>
+<td>GenericTask</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>RecurringTask</td>
+<td> </td>
+<td>Recurring Task</td>
+<td>Recurring Tasks</td>
+<td>GenericTask</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>GenericTask</td>
+<td> </td>
+<td>Task</td>
+<td>Tasks</td>
+<td>PlanningComponent</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>PlanningComponent</td>
+<td> </td>
+<td>Planning Component</td>
+<td> </td>
+<td>WorkItem</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Project</td>
+<td> </td>
+<td>Project</td>
+<td>Projects</td>
+<td>GenericProject</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>Program</td>
+<td> </td>
+<td>Program</td>
+<td>Programs</td>
+<td>GenericProject</td>
+<td>Name</td>
+<td>true</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>GenericProject</td>
+<td> </td>
+<td>Project or Program</td>
+<td>Projects or Programs</td>
+<td>WorkItem</td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td>Requested</td>
+<td>Draft</td>
+<td>Active</td>
+<td>On Hold</td>
+<td>Cancelled</td>
+<td>Completed</td>
+</tr>
+<tr>
+<td>WorkItem</td>
+<td> </td>
+<td>Work Item</td>
+<td>Work Items</td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Topic</td>
+<td> </td>
+<td>Topic</td>
+<td>Topics</td>
+<td> </td>
+<td>Name</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Following</td>
+<td> </td>
+<td>Following</td>
+<td> </td>
+<td> </td>
+<td>User</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Like</td>
+<td> </td>
+<td>Like</td>
+<td> </td>
+<td> </td>
+<td>User</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NLRDiscussionLink</td>
+<td> </td>
+<td>Non-Labor Resource Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ReportDiscussionLink</td>
+<td> </td>
+<td>Report Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>UserReportDiscussionLink</td>
+<td> </td>
+<td>Report Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>SystemReportDiscussionLink</td>
+<td> </td>
+<td>Saved Report Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ExpenseEntryDiscussionLink</td>
+<td> </td>
+<td>ExpenseEntry Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ExpenseSheetDiscussionLink</td>
+<td> </td>
+<td>ExpenseSheet Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>CustomerDiscussionLink</td>
+<td> </td>
+<td>Customer Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>CaseDiscussionLink</td>
+<td> </td>
+<td>Case Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>WorkItemDiscussionLink</td>
+<td> </td>
+<td>WorkItem Discussion Link</td>
+<td> </td>
+<td>DiscussionLink</td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DiscussionLink</td>
+<td> </td>
+<td>Discussion Links</td>
+<td> </td>
+<td> </td>
+<td>DiscussionMessage</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DiscussionReply</td>
+<td> </td>
+<td>Reply</td>
+<td>Replies</td>
+<td>DiscussionMessage</td>
+<td>Text</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DiscussionPost</td>
+<td> </td>
+<td>Post</td>
+<td>Posts</td>
+<td>DiscussionMessage</td>
+<td>Text</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DiscussionMessage</td>
+<td> </td>
+<td>Discussion Message</td>
+<td>Discussion Messages</td>
+<td> </td>
+<td>Text</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupTaskLink</td>
+<td> </td>
+<td>Group Task Link</td>
+<td> </td>
+<td>GroupLink</td>
+<td>Group</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupProjectLink</td>
+<td> </td>
+<td>Group Project Link</td>
+<td> </td>
+<td>GroupLink</td>
+<td>Group</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupCaseLink</td>
+<td> </td>
+<td>Group Case Link</td>
+<td> </td>
+<td>GroupLink</td>
+<td>Group</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupCustomerLink</td>
+<td> </td>
+<td>Group Customer Link</td>
+<td> </td>
+<td>GroupLink</td>
+<td>Group</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupLink</td>
+<td> </td>
+<td>Group Link</td>
+<td> </td>
+<td> </td>
+<td>Group</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>RecycleBinItems</td>
+<td> </td>
+<td>Recycle Bin Items</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Stopwatch</td>
+<td> </td>
+<td>Stopwatch</td>
+<td>Stopwatches</td>
+<td> </td>
+<td>WorkItem</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ProfileLink</td>
+<td> </td>
+<td>Profile Link</td>
+<td> </td>
+<td>MembershipLink</td>
+<td>Container</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>SubGroupHierarchyLink</td>
+<td> </td>
+<td>Group Hierarchy</td>
+<td> </td>
+<td>GroupHierarchyLink</td>
+<td>Container</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupMembershipLink</td>
+<td> </td>
+<td>Group Member</td>
+<td> </td>
+<td>GroupHierarchyLink</td>
+<td>Container</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GroupHierarchyLink</td>
+<td> </td>
+<td>User Group Hierarchy</td>
+<td> </td>
+<td>MembershipLink</td>
+<td>Container</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>SkillLink</td>
+<td> </td>
+<td>Skill Link</td>
+<td> </td>
+<td>MembershipLink</td>
+<td>Container</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>MembershipLink</td>
+<td> </td>
+<td>Membership</td>
+<td> </td>
+<td> </td>
+<td>Container</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>NLRAttachmentLink</td>
+<td> </td>
+<td>Attachment</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>WorkItemAttachmentLink</td>
+<td> </td>
+<td>Attachment</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>DashboardAttachmentLink</td>
+<td> </td>
+<td>Attachments</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ReportAttachmentLink</td>
+<td> </td>
+<td>Attachments</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>UserAttachmentLink</td>
+<td> </td>
+<td>Attachment</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>ExpenseSheetAttachmentLink</td>
+<td> </td>
+<td>Attachment</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>CustomerAttachmentLink</td>
+<td> </td>
+<td>Attachment</td>
+<td> </td>
+<td>AttachmentLink</td>
+<td>Entity</td>
+<td>false</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
