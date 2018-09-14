@@ -16,15 +16,15 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 - https://www.youtube.com/playlist?list=PL39748270F97CB66B
 
 ### User Documentation : 
-- http://usermanual.clarizen.com
+- https://success.clarizen.com/hc/en-us
 
 ### API documentation :
 - https://api.clarizen.com/V2.0/services/
 
 ### Clarizen Functions & Fields & Settings  
-- http://usermanual.clarizen.com/clarizen-functions
-- http://usermanual.clarizen.com/clarizen-fields
-- http://usermanual.clarizen.com/v6-system-settings
+- https://success.clarizen.com/hc/en-us/articles/205712048-Clarizen-Functions
+- https://success.clarizen.com/hc/en-us/articles/206448757-22-3-Clarizen-Fields
+- https://success.clarizen.com/hc/en-us/articles/206448777-22-4-Clarizen-Relations
 
 ### Clarizen C# Wrappers: 
 - https://github.com/ekincaglar/clarizen
@@ -41,10 +41,4 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 ### Clarizen Developer Tools : 
 - https://www.clarizen.com/resource/developer-tools/
 
-### Clarizen Data Loader : 
-- http://usermanual.clarizen.com/data-loader
-
-### Clarizen Misc : 
-Clarizen user manuel CSS style to fix table and heading views. 
-- https://userstyles.org/styles/151256/clarizen-user-manuel-fix
 
