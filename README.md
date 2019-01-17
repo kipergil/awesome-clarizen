@@ -41,4 +41,6 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 ### Clarizen Developer Tools : 
 - https://www.clarizen.com/resource/developer-tools/
 
+### Clarizen Slack Community: 
+- https://clarizenspace.slack.com
 
