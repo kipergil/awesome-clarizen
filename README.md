@@ -20,6 +20,8 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 
 ### API documentation :
 - https://api.clarizen.com/V2.0/services/
+- https://api.clarizen.com/V2.0/services/data/Query - FOR CZQL Syntax
+
 
 ### Clarizen Functions & Fields & Settings  
 - https://success.clarizen.com/hc/en-us/articles/205712048-Clarizen-Functions
