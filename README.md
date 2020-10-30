@@ -3,6 +3,7 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 
 ### Basic Training 
 - https://www.clarizen.com/education/clarizen-orientation-getting-started/
+- https://success.clarizen.com/hc/en-us/categories/200337328-Training
 
 ### Admin Training : 
 - https://www.clarizen.com/education/administration-part-1-global-and-system-settings/
