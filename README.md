@@ -20,6 +20,7 @@ Clarizen related documents, trainings and web pages. Nothing new, just all in on
 - https://success.clarizen.com/hc/en-us
 
 ### API documentation :
+- https://oneeu.clarizen.com/metadata-explorer
 - https://api.clarizen.com/V2.0/services/
 - https://api.clarizen.com/V2.0/services/data/Query - FOR CZQL Syntax
 
